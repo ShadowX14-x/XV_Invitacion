@@ -1,0 +1,133 @@
+/*titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/*texto*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Permite que el body crezca si el contenido es alto */
+    overflow-y: auto;  /* Agrega scroll vertical si es necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('fondo.jpg') no-repeat center center/cover;
+    color: white;
+    font-family: 'Cinzel', cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente (dentro del container) */
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Usá casi toda la pantalla */
+    max-width: 700px; /* Para que no sea demasiado ancho en pantallas grandes */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 0 15px;
+    font-family: 'Pacifico', cursive;
+  
+    
+}
+
+
+h2{
+    font-size: 25px;
+    margin: 0 0 15px;
+    font-family: 'Pacifico', cursive; 
+    font-style:normal;
+}
+
+h3{
+    font-size: 20px;
+    margin: 0 0 15px;
+    font-family: 'Cinzel', serif;
+    font-style:normal;
+}
+/* Cada div adentro del container */
+.cuenta-regresiva,
+.seccion-musica,
+.seccion-mapa,
+.seccion-mapa-extra,
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente (dentro del container) */
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%; /* Usá casi toda la pantalla */
+    max-width: 700px; /* Para que no sea demasiado ancho en pantallas grandes */
+}
+
+/* Música y Mapa */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms{
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+.mapa {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: #0f169e;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+}
+
+.boton:hover {
+    background: #1119b3;
+    transform: translateY(-3px);
+}
+
+/* Cuenta regresiva */
+.cuenta-regresiva h2 {
+    font-size: 24px;
+}
+
+#contador {
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
